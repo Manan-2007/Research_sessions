@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Facebook — log in or sign up</title>
+		<link rel="icon" type="image/webp" href="./facebook_logo.webp">
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main class="page">
+			<section class="hero">
+				<div class="left">
+					<h1 class="logo">facebook</h1>
+					<p class="tag">Facebook helps you connect and share with the people in your life.</p>
+				</div>
+
+				<div class="right">
+					<div class="card" role="region" aria-label="Log in">
+						<form id="loginForm" class="login-form">
+							<input id="emailInput" type="text" placeholder="Email address or phone number" autocomplete="username" required />
+							<input id="passwordInput" type="password" placeholder="Password" autocomplete="current-password" required />
+							<button id="loginBtn" type="submit" class="btn btn-primary">Log in</button>
+							<div class="forgot">
+								<a href="#" id="forgotLink">Forgotten password?</a>
+							</div>
+							<div class="divider" aria-hidden="true"></div>
+							<button type="button" class="btn btn-success" disabled>Create new account</button>
+							<div id="loginMessage" class="message" aria-live="polite"></div>
+						</form>
+					</div>
+
+					<div class="create-page"><b>Create a Page</b> for a celebrity, brand or business.</div>
+				</div>
+			</section>
+
+			<footer class="site-footer">
+				<div class="footer-content">
+					<div class="links">Meta © 2025</div>
+					<div class="links">&copy; 2025 Cloned website by Manan Kochhar. All rights reserved.</div>
+				</div>
+			</footer>
+		</main>
+
+		<div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-hidden="true">
+			<div class="modal-content">
+				<button id="modalClose" class="modal-close" aria-label="Close">×</button>
+				<h3>Create new account</h3>
+				<form id="createForm" class="create-form">
+					<input id="newName" type="text" placeholder="Full name" required />
+					<input id="newEmail" type="email" placeholder="Email address" required />
+					<input id="newPassword" type="password" placeholder="New password" required />
+					<button type="submit" class="btn btn-success">Sign Up (demo)</button>
+				</form>
+				<div id="createMessage" class="message"></div>
+			</div>
+		</div>
+
+	</body>
+</html>
+
